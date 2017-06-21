@@ -1,0 +1,14 @@
+{
+  "name": "sound-art-23",
+  "description": "Official site for Sound Art 23",
+  "authors": "Roman Horokhovatskyy",
+  "private": true,
+  "dependencies": {
+    "fastclick": "^1.0.6"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
