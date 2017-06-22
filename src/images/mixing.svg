@@ -1,0 +1,52 @@
+<svg id="mixing" class="running" xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+
+  <style>
+    /* <![CDATA[ */
+
+    #vinyl {
+      -webkit-animation: VinylRotate 2000ms cubic-bezier(1, 0.01, 0.75, 0.72) 1000ms 1 forwards paused;
+      animation: VinylRotate 2000ms cubic-bezier(1, 0.01, 0.75, 0.72) 1000ms 1 forwards paused;
+      -webkit-transform-origin: 4.5rem 4.5rem;
+      transform-origin: 4.5rem 4.5rem;
+      -webkit-transform-style: preserve-3D;
+      transform-style: preserve-3D;
+    }
+    #mixing.running #vinyl {
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+    }
+
+    @-webkit-keyframes VinylRotate {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes VinylRotate {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ]]> */
+  </style>
+
+  <g id="vinyl">
+    <path d="M71.94,58a14,14,0,1,0,14,14A14,14,0,0,0,71.94,58Zm0,24a10,10,0,1,1,10-10A10,10,0,0,1,71.94,82Z"/>
+    <path d="M72.44,34.5a2,2,0,0,1,0-4,41,41,0,0,1,41,41,2,2,0,0,1-4,0A37,37,0,0,0,72.44,34.5Z"/>
+    <path d="M71.94,19a2,2,0,0,1,0-4,57,57,0,0,1,57,57,2,2,0,0,1-4,0A53,53,0,0,0,71.94,19Z"/>
+  </g>
+
+  <path d="M71.94.06A71.94,71.94,0,1,0,143.89,72,71.94,71.94,0,0,0,71.94.06Zm0,140A68.06,68.06,0,1,1,140,72,68.06,68.06,0,0,1,71.94,140.06Z"/>
+
+</svg>

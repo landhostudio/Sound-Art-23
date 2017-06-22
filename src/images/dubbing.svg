@@ -1,0 +1,56 @@
+<svg id="dubbing" class="running" xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+
+  <style>
+    /* <![CDATA[ */
+
+    #wave-1 {
+      -webkit-animation: WaveFade 500ms linear 1750ms 1 reverse backwards paused;
+      animation: WaveFade 500ms linear 1750ms 1 reverse backwards paused;
+    }
+    #dubbing.running #wave-1 {
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+    }
+    
+    #wave-2 {
+      -webkit-animation: WaveFade 500ms linear 1250ms 1 reverse backwards paused;
+      animation: WaveFade 500ms linear 1250ms 1 reverse backwards paused;
+    }
+    #dubbing.running #wave-2 {
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+    }
+    
+    #wave-3 {
+      -webkit-animation: WaveFade 500ms linear 750ms 1 reverse backwards paused;
+      animation: WaveFade 500ms linear 750ms 1 reverse backwards paused;
+    }
+    #dubbing.running #wave-3 {
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+    }
+
+    @-webkit-keyframes WaveFade {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+
+    @keyframes WaveFade {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+
+    /* ]]> */
+  </style>
+
+  <path id="wave-1" d="M23.92,23.92a2,2,0,0,1-2.83-2.83,72,72,0,0,1,101.82,0,2,2,0,0,1-2.83,2.83,68,68,0,0,0-96.17,0Z"/>
+  <path id="wave-2" d="M37.35,36.35a2,2,0,0,1-2.83-2.83,53,53,0,0,1,75,0,2,2,0,0,1-2.83,2.83,49,49,0,0,0-69.3,0Z"/>
+  <path id="wave-3" d="M48,50a2,2,0,0,1-2.83-2.83,38,38,0,0,1,53.74,0A2,2,0,0,1,96,50,34,34,0,0,0,48,50Z"/>
+
+  <g id="mic">
+    <path d="M70,140H60a2,2,0,0,0,0,4H84a2,2,0,0,0,0-4H74V126H70Z"/>
+    <path d="M108,90a2,2,0,0,0-4,0,32,32,0,0,1-64,0,2,2,0,0,0-4,0,36,36,0,0,0,72,0Z"/>
+    <path d="M72,110A20,20,0,0,0,92,90V72a20,20,0,0,0-40,0V90A20,20,0,0,0,72,110Zm0-24H56V83H72a2,2,0,0,0,0-4H56V76H72a2,2,0,0,0,0-4H56a16,16,0,0,1,32,0V90a16,16,0,0,1-32,0H72a2,2,0,0,0,0-4Z"/>
+  </g>
+
+</svg>
