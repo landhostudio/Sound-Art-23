@@ -73,7 +73,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('pug', function() {
-  return gulp.src(source + '/**/!(_)*.pug')
+  return gulp.src(source + '/pug/**/!(_)*.pug')
     .pipe(pug())
     .pipe(gulp.dest(destination))
     .pipe(browserSync.stream());
