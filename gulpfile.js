@@ -50,7 +50,7 @@ var browserSync  = require('browser-sync').create(),
 // Gulp Tasks ------------------------------------------------------------------
 
 gulp.task('stylesheets', function() {
-  gulp.src(source + '/stylesheets/**/*.{scss,sass}')
+  gulp.src(source + '/css/**/*.{scss,sass}')
     .pipe(sass({
       includePaths: bourbon,
       includePaths: neat,
@@ -65,7 +65,7 @@ gulp.task('stylesheets', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(source + '/scripts/all.js')
+  return gulp.src(source + '/js/all.js')
     .pipe(include())
     .pipe(uglify())
     .pipe(gulp.dest(destination + '/js'))
@@ -82,12 +82,12 @@ gulp.task('pug', function() {
 gulp.task('images', function() {
   return gulp.src(source + '/images/**/*')
     .pipe(flatten())
-    .pipe(gulp.dest(destination + '/img'))
+    .pipe(gulp.dest(destination + '/images'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('fonts', function() {
-  return gulp.src(source + '/webfonts/**/*')
+  return gulp.src(source + '/fonts/**/*')
     .pipe(flatten())
     .pipe(gulp.dest(destination + '/fonts'))
     .pipe(browserSync.stream());
@@ -111,10 +111,10 @@ gulp.task('watch', function() {
     }
   });
 
-  gulp.watch(source + '/stylesheets/**/*.{scss,sass}', ['stylesheets']);
-  gulp.watch(source + '/scripts/**/*.js', ['scripts']);
+  gulp.watch(source + '/css/**/*.{scss,sass}', ['stylesheets']);
+  gulp.watch(source + '/js/**/*.js', ['scripts']);
   gulp.watch(source + '/**/*.pug', ['pug']);
-  gulp.watch(source + '/webfonts/**/*', ['fonts']);
+  gulp.watch(source + '/fonts/**/*', ['fonts']);
   gulp.watch(source + '/images/**/*', ['images']);
   gulp.watch(['build']);
 });
