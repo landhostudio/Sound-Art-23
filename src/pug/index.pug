@@ -14,6 +14,38 @@ block content
       - var heroButtonTitle = 'Our services'
     include components/_hero
 
+    section.filmography
+      
+      block prepend components/_hero
+        - var heroImage = '/img/artwork-2.png'
+        - var heroTitle = 'We provide services for international films worldwide'
+        - var heroDesc = 'It can also have much more detail, such as name to contact, address to contact or visit, a description of the product'
+        - var heroButtonLink = '#'
+        - var heroButtonTitle = 'Our filmography'
+      include components/_hero
+      
+      div.filmography-items
+        div.container
+          div.swiper-container
+
+            div.swiper-wrapper
+              
+              mixin swiperSlide(swiperImage, swiperTitle, swiperDesc, swiperButtonLink, swiperButtonTitle)
+                article.swiper-slide
+                  div.swiper-slide-content
+                    div.swiper-slide-content-image
+                      img(src=swiperImage alt='')
+                    div.swiper-slide-content-text
+                      h3 #{swiperTitle}
+                      p #{swiperDesc}
+                      a(href=swiperButtonLink) #{swiperButtonTitle}
+
+              +swiperSlide('/img/movie-1.jpg', 'Our working process behind La Haine', 'While most people enjoy standard hirarchy and excitement it provides, others may experience gambling', '#', 'Read more')
+              +swiperSlide('/img/movie-2.jpg', 'Our philosophy behind sound in City of God', 'Point view, the till at a shop check out, has become very complex over the past ten years', '#', 'Read more')
+              +swiperSlide('/img/movie-3.jpg', 'Mastering sound of DiCaprio’s The Departed', 'Always write down all details of every phone call. Write down any names and titles you learn.', '#', 'Read more')
+
+            div.swiper-pagination
+
     div.icons
       include ../img/sound-design.svg
       include ../img/mixing-1.svg
@@ -24,7 +56,7 @@ block content
       include ../img/dubbing.svg
 
   block prepend components/_cta
-    - var CTAimage = '/img/artwork-2.png'
+    - var CTAimage = '/img/artwork-3.png'
     - var CTAtitle = 'Connect your audience with the content that matters most to them'
     - var CTAdesc = 'We offer most reliable services for your valuable project providing the tools and our team to improve your business'
     - var CTAbuttonLink = '#'

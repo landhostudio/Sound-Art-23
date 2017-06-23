@@ -1,4 +1,5 @@
 //=include ../../bower_components/jquery/dist/jquery.js
+//=include ../../bower_components/swiper/dist/js/swiper.jquery.js
 //=include ../../bower_components/fastclick/lib/fastclick.js
 
 (function($) {
@@ -6,7 +7,29 @@
   'use strict';
 
   var init = function() {
+    if ( $('.swiper-container').length ) {
+      initSwiper();
+    };
     initLog();
+  };
+
+  function initSwiper() {
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      slidesPerView: 2,
+      spaceBetween: 32,
+      paginationClickable: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 24
+        },
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 16
+        }
+      }
+    });
   };
 
   function initLog() {
