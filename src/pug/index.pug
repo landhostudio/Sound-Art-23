@@ -3,7 +3,17 @@ block prepend head
   - var page = 'Home'
 block content
   include components/_header
-  main(role='main')
+
+  article
+
+    block prepend components/_hero
+      - var heroImage = '/img/artwork-1.png'
+      - var heroTitle = 'More than 40 years in the sound production business'
+      - var heroDesc = 'Classifieds are usually the first place you think of when you are getting ready to make a purchase. Whether you want to purchase a vehicle'
+      - var heroCTAlink = '#'
+      - var heroCTAtitle = 'Our services'
+    include components/_hero
+    
     div.icons
       include ../img/sound-design.svg
       include ../img/mixing-1.svg
@@ -12,4 +22,5 @@ block content
       include ../img/vfx.svg
       include ../img/screening.svg
       include ../img/dubbing.svg
+
   include components/_footer
