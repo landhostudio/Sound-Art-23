@@ -1,15 +1,16 @@
-if ( heroImage && heroTitle && heroDesc && heroButtonLink && heroButtonTitle )
-  block hero
-    header.hero
-      div.container
-        if ( heroImage )
-          div.hero-image
-            img(src=heroImage alt='')
-        if ( heroTitle && heroDesc && heroButtonLink && heroButtonTitle )
-          div.hero-content
-            if ( heroTitle )
-              h2 #{heroTitle}
-            if ( heroDesc )
-              p #{heroDesc}
-            if ( heroButtonLink || heroButtonTitle )
-              a.button(href=heroButtonLink) #{heroButtonTitle}
+block hero
+  header.hero
+    div.container
+      if ( heroIcon == 'yes')
+        div.hero-icon
+          include ../../img/sound-design.svg
+      if ( heroImage )
+        div.hero-image
+          img(src=heroImage alt='')  
+      div.hero-content
+        if ( heroTitle )
+          h2 #{heroTitle}
+        if ( heroDesc )
+          p #{heroDesc}
+        if ( heroButtonLink || heroButtonTitle )
+          a.button(href=heroButtonLink) #{heroButtonTitle}
