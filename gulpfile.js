@@ -80,7 +80,7 @@ gulp.task('pug', function() {
 });
 
 gulp.task('images', function() {
-  return gulp.src(source + '/img/**/*.{png,jpg}')
+  return gulp.src(source + '/img/**/*')
     .pipe(flatten())
     .pipe(gulp.dest(destination + '/img'))
     .pipe(browserSync.stream());
