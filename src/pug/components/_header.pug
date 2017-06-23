@@ -1,0 +1,33 @@
+header.header(role='banner')
+  div.container
+    div.header-logo
+      h1
+        a(href='/')
+          span.hidden #{title}
+          include ../../img/logo.svg
+    div.header-toggle
+      button.toggle-button(type='button')
+        span Open navigation
+        div.state-1
+          include ../../img/nav.svg
+        div.state-2
+          include ../../img/nav-close.svg
+    nav.header-nav
+      h2.hidden Navigation
+      ul
+        li.header-nav-page--active
+          a(href='#') Home
+        li
+          a(href='#') Services
+        li
+          a(href='#') Filmography
+        li
+          a(href='#') Team
+        li
+          a(href='#') Blog
+        li
+          a(href='#') About
+        li
+          a(href='#') Contact
+    div.header-lang
+      include ../components/_dropdown.pug

@@ -2,7 +2,8 @@ extends _layout.pug
 block prepend head
   - var page = 'Home'
 block content
-  main.main(role='main')
+  include components/_header
+  main(role='main')
     div.icons
       include ../img/sound-design.svg
       include ../img/mixing-1.svg
