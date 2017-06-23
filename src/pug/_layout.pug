@@ -1,14 +1,14 @@
 include _vars.pug
-
 doctype html
 html.no-js(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='x-ua-compatible' content='ie=edge')
-    title #{title}
-    meta(name='description' content=description)
-    meta(name='viewport' content='width=device-width, initial-scale=1')
-    link(rel='stylesheet' href='/css/all.css')
+  block head
+    head
+      meta(charset='utf-8')
+      meta(http-equiv='x-ua-compatible' content='ie=edge')
+      title #{page} – #{title}
+      meta(name='description' content=description)
+      meta(name='viewport' content='width=device-width, initial-scale=1')
+      link(rel='stylesheet' href='/css/all.css')
   body
     block content
     script(src='/js/all.js')
