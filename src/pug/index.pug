@@ -1,16 +1,16 @@
-extends pug/_layout.pug
+extends _layout.pug
 
 block content
   main.main(role='main')
 
     div.icons
-      img(src='img/sound-design.svg')
-      img(src='img/mixing-1.svg')
-      img(src='img/video-editing.svg')
-      img(src='img/post-production.svg')
-      img(src='img/vfx.svg')
-      img(src='img/screening.svg')
-      img(src='img/dubbing.svg')
+      include ../images/sound-design.svg
+      include ../images/mixing-1.svg
+      include ../images/video-editing.svg
+      include ../images/post-production.svg
+      include ../images/vfx.svg
+      include ../images/screening.svg
+      include ../images/dubbing.svg
 
     :markdown-it
       # Hello World!
