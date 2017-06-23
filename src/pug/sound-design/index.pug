@@ -1,0 +1,59 @@
+extends ../_layout
+block prepend head
+  - var page = 'Sound Design'
+block content
+  include ../components/_header
+
+  article
+
+    block prepend ../components/_hero
+      - var heroIcon = 'yes'
+      - var heroTitle = 'Sound Design'
+      - var heroDesc = 'To a general advertiser outdoor advertising is worthy of consideration'
+    include ../components/_hero
+
+    div.body
+      div.container
+        p There is no better advertisement campaign that is low cost and also successful at the same time. Great business ideas when utilized effectively can save lots of money. This is not only easy for those who work full-time as an advertiser, but also for those who work from home. Advertising from home is also a low cost option, which involves making and distributing fliers. Usually potential customers will visit home for business dealing. Print good amount of fliers and give it to anyone who is visiting home like family, friends, mailman, etc. Business can also be distributed. Few selected people can be given sample of the product. For those who work outside home to distribute fliers.
+
+    div.details
+      div.container
+        div.details-item
+          :markdown-it
+            ### Room A
+            Dolby digital mixing theatre for film and TV post-production:
+            - Dimensions: 8m x 12m
+            - Screen: 7m x 3m
+            - AMS-Neve Logic MMC
+            - Recording: Pro-tools HDX 2
+            - Dolby Digital
+            - DTS
+            - Kinoton 35mm projectors
+            - HD projector
+            - 1x Cedar dynamic noise suppressor
+            - Dolby 430 series noise suppressor module
+            - Yamaha SPX 90 II reverb
+            - Eventide H3000 D-SE ultra-harmonizer
+            - Lexicon reverb
+        div.details-item
+          :markdown-it
+            ### Room B
+            - Dolby digital mixing theatre for TV and film post-production:
+            - Dimensions: 6,90m x 8,20m
+            - Screen: 2,30m x 5,40m
+            - AMS-Neve Logic MMC
+            - Pro-tools HD3
+            - Dolby digital
+            - Madi SSL Soundvision interface
+            - Eventide
+            - Yamaha SPX900 reverb
+            - HD Projector
+
+  block prepend ../components/_cta
+    - var CTAimage = '/img/artwork-3.png'
+    - var CTAtitle = 'Connect your audience with the content that matters most to them'
+    - var CTAdesc = 'We offer most reliable services for your valuable project providing the tools and our team to improve your business'
+    - var CTAbuttonLink = '#'
+    - var CTAbuttonTitle = 'Contact us'
+  include ../components/_cta
+  include ../components/_footer
