@@ -1,15 +1,15 @@
-if ( heroImage && heroTitle && heroDesc && heroCTAlink && heroCTAtitle )
+if ( heroImage && heroTitle && heroDesc && heroButtonLink && heroButtonTitle )
   header.hero
     block hero
       div.container
         if ( heroImage )
           div.hero-image
             img(src=heroImage alt='')
-        if ( heroTitle && heroDesc && heroCTAlink && heroCTAtitle )
+        if ( heroTitle && heroDesc && heroButtonLink && heroButtonTitle )
           div.hero-content
             if ( heroTitle )
               h2 #{heroTitle}
             if ( heroDesc )
               p #{heroDesc}
-            if ( heroCTAlink || heroCTAtitle )
-              a.button(href=heroCTAlink) #{heroCTAtitle}
+            if ( heroButtonLink || heroButtonTitle )
+              a.button(href=heroButtonLink) #{heroButtonTitle}
