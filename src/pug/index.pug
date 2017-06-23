@@ -1,4 +1,4 @@
-extends _layout.pug
+extends _layout
 block prepend head
   - var page = 'Home'
 block content
@@ -23,4 +23,11 @@ block content
       include ../img/screening.svg
       include ../img/dubbing.svg
 
+  block prepend components/_cta
+    - var CTAimage = '/img/artwork-2.png'
+    - var CTAtitle = 'Connect your audience with the content that matters most to them'
+    - var CTAdesc = 'We offer most reliable services for your valuable project providing the tools and our team to improve your business'
+    - var CTAbuttonLink = '#'
+    - var CTAbuttonTitle = 'Contact us'
+  include components/_cta
   include components/_footer
