@@ -1,4 +1,4 @@
-<svg id="screening" class="running" xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+<svg id="screening" xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
 
   <style>
     /* <![CDATA[ */
@@ -8,37 +8,28 @@
       transform-style: preserve-3D;
     }
 
-    #projection-1 {
-      -webkit-animation: ScreeningProjection 500ms linear 1000ms 1 alternate backwards paused;
-      animation: ScreeningProjection 500ms linear 1000ms 1 alternate backwards paused;
+    .hero-content.aos-animate #screening #projection-1,
+    .services-item-content-image.aos-animate #screening #projection-1 {
+      -webkit-animation: ScreeningProjection 500ms linear 1000ms 1 alternate backwards;
+      animation: ScreeningProjection 500ms linear 1000ms 1 alternate backwards;
       -webkit-transform-origin: bottom left;
       transform-origin: bottom left;
     }
-    #screening.running #projection-1 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
-    }
 
-    #projection-2 {
-      -webkit-animation: ScreeningProjection 500ms linear 1000ms 1 alternate backwards paused;
-      animation: ScreeningProjection 500ms linear 1000ms 1 alternate backwards paused;
+    .hero-content.aos-animate #screening #projection-2,
+    .services-item-content-image.aos-animate #screening #projection-2 {
+      -webkit-animation: ScreeningProjection 500ms linear 1000ms 1 alternate backwards;
+      animation: ScreeningProjection 500ms linear 1000ms 1 alternate backwards;
       -webkit-transform-origin: top left;
       transform-origin: top left;
     }
-    #screening.running #projection-2 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
-    }
     
-    #camera {
-      -webkit-animation: ScreeningCamera 500ms linear 1000ms 1 alternate backwards paused;
-      animation: ScreeningCamera 500ms linear 1000ms 1 alternate backwards paused;
+    .hero-content.aos-animate #screening #camera,
+    .services-item-content-image.aos-animate #screening #camera {
+      -webkit-animation: ScreeningCamera 500ms linear 1000ms 1 alternate backwards;
+      animation: ScreeningCamera 500ms linear 1000ms 1 alternate backwards;
       -webkit-transform-origin: 4.5rem 4.5rem;
       transform-origin: 4.5rem 4.5rem;
-    }
-    #screening.running #camera {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
     }
 
     @-webkit-keyframes ScreeningProjection {

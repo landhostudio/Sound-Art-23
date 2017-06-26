@@ -1,4 +1,4 @@
-<svg id="vfx" class="running" xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+<svg id="vfx" xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
 
   <style>
     /* <![CDATA[ */
@@ -10,184 +10,124 @@
       transform-style: preserve-3D;
     }
 
-    #firework-1 {
-      -webkit-animation: FireworkOpacity 250ms linear 2100ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 2100ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-1 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-1,
+    .services-item-content-image.aos-animate #vfx #firework-1 {
+      -webkit-animation: FireworkOpacity 250ms linear 2100ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 2100ms 1 alternate backwards;
     }
     
-    #firework-2 {
-      -webkit-animation: FireworkOpacity 250ms linear 850ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 850ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-2 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-2,
+    .services-item-content-image.aos-animate #vfx #firework-2 {
+      -webkit-animation: FireworkOpacity 250ms linear 850ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 850ms 1 alternate backwards;
     }
     
-    #firework-3 {
-      -webkit-animation: FireworkOpacity 250ms linear 1300ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 1300ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-3 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-3,
+    .services-item-content-image.aos-animate #vfx #firework-3 {
+      -webkit-animation: FireworkOpacity 250ms linear 1300ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 1300ms 1 alternate backwards;
     }
     
-    #firework-4 {
-      -webkit-animation: FireworkOpacity 250ms linear 3300ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 3300ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-4 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-4,
+    .services-item-content-image.aos-animate #vfx #firework-4 {
+      -webkit-animation: FireworkOpacity 250ms linear 3300ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 3300ms 1 alternate backwards;
     }
     
-    #firework-5 {
-      -webkit-animation: FireworkOpacity 250ms linear 2850ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 2850ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-5 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-5,
+    .services-item-content-image.aos-animate #vfx #firework-5 {
+      -webkit-animation: FireworkOpacity 250ms linear 2850ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 2850ms 1 alternate backwards;
     }
     
-    #firework-6 {
-      -webkit-animation: FireworkOpacity 250ms linear 1450ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 1450ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-6 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-6,
+    .services-item-content-image.aos-animate #vfx #firework-6 {
+      -webkit-animation: FireworkOpacity 250ms linear 1450ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 1450ms 1 alternate backwards;
     }
     
-    #firework-7 {
-      -webkit-animation: FireworkOpacity 250ms linear 1800ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 1800ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-7 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-7,
+    .services-item-content-image.aos-animate #vfx #firework-7 {
+      -webkit-animation: FireworkOpacity 250ms linear 1800ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 1800ms 1 alternate backwards;
     }
     
-    #firework-8 {
-      -webkit-animation: FireworkOpacity 250ms linear 2000ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 2000ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-8 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-8,
+    .services-item-content-image.aos-animate #vfx #firework-8 {
+      -webkit-animation: FireworkOpacity 250ms linear 2000ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 2000ms 1 alternate backwards;
     }
     
-    #firework-9 {
-      -webkit-animation: FireworkOpacity 250ms linear 1500ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 1500ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-9 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-9,
+    .services-item-content-image.aos-animate #vfx #firework-9 {
+      -webkit-animation: FireworkOpacity 250ms linear 1500ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 1500ms 1 alternate backwards;
     }
     
-    #firework-10 {
-      -webkit-animation: FireworkOpacity 250ms linear 2250ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 2250ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-10 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-10,
+    .services-item-content-image.aos-animate #vfx #firework-10 {
+      -webkit-animation: FireworkOpacity 250ms linear 2250ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 2250ms 1 alternate backwards;
     }
     
-    #firework-11 {
-      -webkit-animation: FireworkOpacity 250ms linear 750ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 750ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-11 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-11,
+    .services-item-content-image.aos-animate #vfx #firework-11 {
+      -webkit-animation: FireworkOpacity 250ms linear 750ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 750ms 1 alternate backwards;
     }
     
-    #firework-12 {
-      -webkit-animation: FireworkOpacity 250ms linear 1950ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 1950ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-12 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-12,
+    .services-item-content-image.aos-animate #vfx #firework-12 {
+      -webkit-animation: FireworkOpacity 250ms linear 1950ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 1950ms 1 alternate backwards;
     }
     
-    #firework-13 {
-      -webkit-animation: FireworkOpacity 250ms linear 2400ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 2400ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-13 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-13,
+    .services-item-content-image.aos-animate #vfx #firework-13 {
+      -webkit-animation: FireworkOpacity 250ms linear 2400ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 2400ms 1 alternate backwards;
     }
     
-    #firework-14 {
-      -webkit-animation: FireworkOpacity 250ms linear 2550ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 2550ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-14 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-14,
+    .services-item-content-image.aos-animate #vfx #firework-14 {
+      -webkit-animation: FireworkOpacity 250ms linear 2550ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 2550ms 1 alternate backwards;
     }
     
-    #firework-15 {
-      -webkit-animation: FireworkOpacity 250ms linear 3150ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 3150ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-15 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-15,
+    .services-item-content-image.aos-animate #vfx #firework-15 {
+      -webkit-animation: FireworkOpacity 250ms linear 3150ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 3150ms 1 alternate backwards;
     }
     
-    #firework-16 {
-      -webkit-animation: FireworkOpacity 250ms linear 1650ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 1650ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-16 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-16,
+    .services-item-content-image.aos-animate #vfx #firework-16 {
+      -webkit-animation: FireworkOpacity 250ms linear 1650ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 1650ms 1 alternate backwards;
     }
     
-    #firework-17 {
-      -webkit-animation: FireworkOpacity 250ms linear 3000ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 3000ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-17 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-17,
+    .services-item-content-image.aos-animate #vfx #firework-17 {
+      -webkit-animation: FireworkOpacity 250ms linear 3000ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 3000ms 1 alternate backwards;
     }
     
-    #firework-18 {
-      -webkit-animation: FireworkOpacity 250ms linear 3450ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 3450ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-18 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-18,
+    .services-item-content-image.aos-animate #vfx #firework-18 {
+      -webkit-animation: FireworkOpacity 250ms linear 3450ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 3450ms 1 alternate backwards;
     }
     
-    #firework-19 {
-      -webkit-animation: FireworkOpacity 250ms linear 1150ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 1150ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-19 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-19,
+    .services-item-content-image.aos-animate #vfx #firework-19 {
+      -webkit-animation: FireworkOpacity 250ms linear 1150ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 1150ms 1 alternate backwards;
     }
     
-    #firework-20 {
-      -webkit-animation: FireworkOpacity 250ms linear 2700ms 1 alternate backwards paused;
-      animation: FireworkOpacity 250ms linear 2700ms 1 alternate backwards paused;
-    }
-    #vfx.running #firework-20 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #vfx #firework-20,
+    .services-item-content-image.aos-animate #vfx #firework-20 {
+      -webkit-animation: FireworkOpacity 250ms linear 2700ms 1 alternate backwards;
+      animation: FireworkOpacity 250ms linear 2700ms 1 alternate backwards;
     }
 
     @-webkit-keyframes FireworksRotate {

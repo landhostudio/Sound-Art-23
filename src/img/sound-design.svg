@@ -1,88 +1,64 @@
-<svg id="sound-design-2" class="running" xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+<svg id="sound-design-2" xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
 
   <style>
     /* <![CDATA[ */
 
-    #wave-1, #wave-2, #wave-3, #wave-4, #wave-5, #wave-6, #wave-7, #wave-8 {
+    #wave-b-1, #wave-b-2, #wave-b-3, #wave-b-4, #wave-b-5, #wave-b-6, #wave-b-7, #wave-b-8 {
       -webkit-transform-origin: 4.5rem 4.5rem;
       transform-origin: 4.5rem 4.5rem;
       -webkit-transform-style: preserve-3D;
       transform-style: preserve-3D;
     }
 
-    #wave-1 {
-      -webkit-animation: WaveScale 1500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) 750ms 1 reverse backwards paused;
-      animation: WaveScale 1500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) 750ms 1 reverse backwards paused;
-    }
-    #sound-design-2.running #wave-1 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #sound-design-2 #wave-b-1,
+    .services-item-content-image.aos-animate #sound-design-2 #wave-b-1 {
+      -webkit-animation: WaveBScale 1500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) 750ms 1 reverse backwards;
+      animation: WaveBScale 1500ms cubic-bezier(0.18, 0.89, 0.32, 1.28) 750ms 1 reverse backwards;
     }
 
-    #wave-2 {
-      -webkit-animation: WaveScale 1500ms cubic-bezier(0.59, -0.65, 0.27, 1.65) 1250ms 1 reverse backwards paused;
-      animation: WaveScale 1500ms cubic-bezier(0.59, -0.65, 0.27, 1.65) 1250ms 1 reverse backwards paused;
-    }
-    #sound-design-2.running #wave-2 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #sound-design-2 > #wave-b-2,
+    .services-item-content-image.aos-animate #sound-design-2 #wave-b-2 {
+      -webkit-animation: WaveBScale 1500ms cubic-bezier(0.59, -0.65, 0.27, 1.65) 1250ms 1 reverse backwards;
+      animation: WaveBScale 1500ms cubic-bezier(0.59, -0.65, 0.27, 1.65) 1250ms 1 reverse backwards;
     }
 
-    #wave-3 {
-      -webkit-animation: WaveScale 1500ms cubic-bezier(0.55, -0.89, 0.33, 1.7) 1500ms 1 reverse backwards paused;
-      animation: WaveScale 1500ms cubic-bezier(0.55, -0.89, 0.33, 1.7) 1500ms 1 reverse backwards paused;
-    }
-    #sound-design-2.running #wave-3 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #sound-design-2 > #wave-b-3,
+    .services-item-content-image.aos-animate #sound-design-2 > #wave-b-3 {
+      -webkit-animation: WaveBScale 1500ms cubic-bezier(0.55, -0.89, 0.33, 1.7) 1500ms 1 reverse backwards;
+      animation: WaveBScale 1500ms cubic-bezier(0.55, -0.89, 0.33, 1.7) 1500ms 1 reverse backwards;
     }
 
-    #wave-4 {
-      -webkit-animation: WaveScale 1000ms cubic-bezier(0.51, -0.94, 0.53, 0.99) 1750ms 1 reverse backwards paused;
-      animation: WaveScale 1000ms cubic-bezier(0.51, -0.94, 0.53, 0.99) 1750ms 1 reverse backwards paused;
-    }
-    #sound-design-2.running #wave-4 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #sound-design-2 > #wave-b-4,
+    .services-item-content-image.aos-animate #sound-design-2 > #wave-b-4 {
+      -webkit-animation: WaveBScale 1000ms cubic-bezier(0.51, -0.94, 0.53, 0.99) 1750ms 1 reverse backwards;
+      animation: WaveBScale 1000ms cubic-bezier(0.51, -0.94, 0.53, 0.99) 1750ms 1 reverse backwards;
     }
 
-    #wave-5 {
-      -webkit-animation: WaveScale 1250ms cubic-bezier(0.26, -0.82, 0.53, 0.99) 2000ms 1 reverse backwards paused;
-      animation: WaveScale 1250ms cubic-bezier(0.26, -0.82, 0.53, 0.99) 2000ms 1 reverse backwards paused;
-    }
-    #sound-design-2.running #wave-5 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #sound-design-2 > #wave-b-5,
+    .services-item-content-image.aos-animate #sound-design-2 > #wave-b-5 {
+      -webkit-animation: WaveBScale 1250ms cubic-bezier(0.26, -0.82, 0.53, 0.99) 2000ms 1 reverse backwards;
+      animation: WaveBScale 1250ms cubic-bezier(0.26, -0.82, 0.53, 0.99) 2000ms 1 reverse backwards;
     }
 
-    #wave-6 {
-      -webkit-animation: WaveScale 500ms cubic-bezier(0.65, 0.05, 0.36, 1) 2250ms 1 reverse backwards paused;
-      animation: WaveScale 500ms cubic-bezier(0.65, 0.05, 0.36, 1) 2250ms 1 reverse backwards paused;
-    }
-    #sound-design-2.running #wave-6 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #sound-design-2 > #wave-b-6,
+    .services-item-content-image.aos-animate #sound-design-2 > #wave-b-6 {
+      -webkit-animation: WaveBScale 500ms cubic-bezier(0.65, 0.05, 0.36, 1) 2250ms 1 reverse backwards;
+      animation: WaveBScale 500ms cubic-bezier(0.65, 0.05, 0.36, 1) 2250ms 1 reverse backwards;
     }
 
-    #wave-7 {
-      -webkit-animation: WaveScale 500ms cubic-bezier(0.42, -0.77, 1, 1) 2500ms 1 reverse backwards paused;
-      animation: WaveScale 500ms cubic-bezier(0.42, -0.77, 1, 1) 2500ms 1 reverse backwards paused;
-    }
-    #sound-design-2.running #wave-7 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #sound-design-2 > #wave-b-7,
+    .services-item-content-image.aos-animate #sound-design-2 > #wave-b-7 {
+      -webkit-animation: WaveBScale 500ms cubic-bezier(0.42, -0.77, 1, 1) 2500ms 1 reverse backwards;
+      animation: WaveBScale 500ms cubic-bezier(0.42, -0.77, 1, 1) 2500ms 1 reverse backwards;
     }
 
-    #wave-8 {
-      -webkit-animation: WaveScale 300ms cubic-bezier(0.67, -0.98, 1, 1) 2750ms 1 reverse backwards paused;
-      animation: WaveScale 300ms cubic-bezier(0.67, -0.98, 1, 1) 2750ms 1 reverse backwards paused;
-    }
-    #sound-design-2.running #wave-8 {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #sound-design-2 > #wave-b-8,
+    .services-item-content-image.aos-animate #sound-design-2 > #wave-b-8 {
+      -webkit-animation: WaveBScale 300ms cubic-bezier(0.67, -0.98, 1, 1) 2750ms 1 reverse backwards;
+      animation: WaveBScale 300ms cubic-bezier(0.67, -0.98, 1, 1) 2750ms 1 reverse backwards;
     }
 
-    @-webkit-keyframes WaveScale {
+    @-webkit-keyframes WaveBScale {
       from {
         -webkit-transform: scaleY(1);
         transform: scaleY(1);
@@ -93,7 +69,7 @@
       }
     }
 
-    @keyframes WaveScale {
+    @keyframes WaveBScale {
       from {
         -webkit-transform: scaleY(1);
         transform: scaleY(1);
@@ -107,39 +83,39 @@
     /* ]]> */
   </style>
 
-  <path id="wave-1" d="M70,2h0a2,2,0,0,1,4,0h0V142a2,2,0,0,1-4,0Z"/>
+  <path id="wave-b-1" d="M70,2h0a2,2,0,0,1,4,0h0V142a2,2,0,0,1-4,0Z"/>
 
-  <g id="wave-2">
+  <g id="wave-b-2">
     <path d="M79,19a2,2,0,0,1,4,0V125a2,2,0,0,1-2,2h0a2,2,0,0,1-2-2h0Z"/>
     <path d="M61,19a2,2,0,0,1,4,0V125a2,2,0,0,1-4,0Z"/>
   </g>
 
-  <g id="wave-3">
+  <g id="wave-b-3">
     <path d="M88,44a2,2,0,0,1,4,0v56a2,2,0,0,1-4,0h0Z"/>
     <path d="M52,44a2,2,0,0,1,4,0v56a2,2,0,0,1-4,0h0Z"/>
   </g>
 
-  <g id="wave-4">
+  <g id="wave-b-4">
     <path d="M97,56a2,2,0,0,1,4,0V88a2,2,0,0,1-4,0Z"/>
     <path d="M43,56a2,2,0,0,1,4,0V88a2,2,0,0,1-4,0Z"/>
   </g>
 
-  <g id="wave-5">
+  <g id="wave-b-5">
     <path d="M106,50a2,2,0,0,1,4,0V94a2,2,0,0,1-4,0Z"/>
     <path d="M34,50a2,2,0,0,1,4,0V94a2,2,0,0,1-4,0Z"/>
   </g>
 
-  <g id="wave-6">
+  <g id="wave-b-6">
     <path d="M115,54a2,2,0,0,1,4,0V90a2,2,0,0,1-4,0Z"/>
     <path d="M25,54a2,2,0,0,1,4,0V90a2,2,0,0,1-4,0Z"/>
   </g>
 
-  <g id="wave-7">
+  <g id="wave-b-7">
     <path d="M124,60a2,2,0,0,1,4,0V84a2,2,0,0,1-4,0Z"/>
     <path d="M16,60a2,2,0,0,1,4,0V84a2,2,0,0,1-4,0Z"/>
   </g>
 
-  <g id="wave-8">
+  <g id="wave-b-8">
     <path d="M134,66a2,2,0,0,1,4,0V78a2,2,0,0,1-4,0Z"/>
     <path d="M6,66H6a2,2,0,0,1,2-2H8a2,2,0,0,1,2,2h0V78a2,2,0,0,1-4,0H6Z"/>
   </g>

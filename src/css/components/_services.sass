@@ -1,0 +1,32 @@
+.services
+  &-items
+    .container
+      display: flex
+      flex-wrap: wrap
+  &-item
+    margin-bottom: $space
+    @include media($size-m-min)
+      margin-bottom: $space * 1.5
+    @include media($size-l-min)
+      margin-bottom: $space * 2
+    &-content
+      text-align: center
+      &-image
+        line-height: 0
+        svg
+          fill: lighten( $color-1, 75% )
+          width: rem-calc(64)
+          height: rem-calc(64)
+          @include media($size-l-min)
+            width: rem-calc(96)
+            height: rem-calc(96)
+      &-text
+        padding: $space
+        @include media($size-m-min)
+          padding: $space * 1.5
+        @include media($size-l-min)
+          padding: $space * 2
+        p
+          font-size: em-calc(14)
+          color: lighten( $color-1, 50% )
+          margin-bottom: 0

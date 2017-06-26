@@ -1,4 +1,4 @@
-<svg id="video-editing-1" class="running" xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+<svg id="video-editing-1" xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
 
   <style>
     /* <![CDATA[ */
@@ -10,13 +10,10 @@
       transform-style: preserve-3D;
     }
 
-    #film {
-      -webkit-animation: FilmRotate 3000ms cubic-bezier(0.51, -0.62, 0.2, 1.13) 1000ms 1 forwards paused;
-      animation: FilmRotate 3000ms cubic-bezier(0.51, -0.62, 0.2, 1.13) 1000ms 1 forwards paused;
-    }
-    #video-editing-1.running #film {
-      -webkit-animation-play-state: running;
-      animation-play-state: running;
+    .hero-content.aos-animate #video-editing-1 #film,
+    .services-item-content-image.aos-animate #video-editing-1 #film {
+      -webkit-animation: FilmRotate 3000ms cubic-bezier(0.51, -0.62, 0.2, 1.13) 1000ms 1 forwards;
+      animation: FilmRotate 3000ms cubic-bezier(0.51, -0.62, 0.2, 1.13) 1000ms 1 forwards;
     }
 
     @-webkit-keyframes FilmRotate {

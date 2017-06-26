@@ -2,9 +2,9 @@ block hero
   header.hero
     div.container.container--grid
       if ( heroImage )
-        div.hero-image.container-column-two
-          img(src=heroImage alt='')  
-      div.hero-content.container-column-two
+        div.hero-image.container-column-two(data-aos='fade-down', data-aos-duration='2000')
+          img(src=heroImage alt='')
+      div.hero-content.container-column-two(data-aos='fade-up', data-aos-duration='1500')
         if ( heroIcon == 'yes')
           include ../../img/sound-design.svg
         if ( heroTitle )

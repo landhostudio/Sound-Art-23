@@ -1,5 +1,6 @@
 //=include ../../bower_components/jquery/dist/jquery.js
 //=include ../../bower_components/swiper/dist/js/swiper.jquery.js
+//=include ../../bower_components/aos/dist/aos.js
 //=include ../../bower_components/fastclick/lib/fastclick.js
 
 (function($) {
@@ -12,6 +13,7 @@
     if ( $('.swiper-container').length ) {
       initSwiper();
     };
+    initAOS();
     initLog();
   };
 
@@ -48,6 +50,10 @@
 
   function initLog() {
     console.log('Sound Art 23');
+  };
+
+  function initAOS() {
+    AOS.init();
   };
 
   init();
