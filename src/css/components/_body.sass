@@ -1,0 +1,10 @@
+.body
+  .container
+    @include media($size-m-min)
+      column-count: 2
+      column-gap: $space * 1.5
+    @include media($size-l-min)
+      column-gap: $space * 2
+
+  p
+    margin-top: 0
