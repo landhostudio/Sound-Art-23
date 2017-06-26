@@ -1,16 +1,15 @@
 block hero
   header.hero
-    div.container
-      if ( heroIcon == 'yes')
-        div.hero-icon
-          include ../../img/sound-design.svg
+    div.container.container--grid
       if ( heroImage )
-        div.hero-image
+        div.hero-image.container-column-two
           img(src=heroImage alt='')  
-      div.hero-content
+      div.hero-content.container-column-two
+        if ( heroIcon == 'yes')
+          include ../../img/sound-design.svg
         if ( heroTitle )
-          h2 #{heroTitle}
+          h2.h1 #{heroTitle}
         if ( heroDesc )
           p #{heroDesc}
         if ( heroButtonLink || heroButtonTitle )
-          a.button(href=heroButtonLink) #{heroButtonTitle}
+          a.button-cta(href=heroButtonLink) #{heroButtonTitle}
