@@ -8,6 +8,7 @@
 
   var init = function() {
     initNavigation();
+    initLanguage();
     if ( $('.swiper-container').length ) {
       initSwiper();
     };
@@ -17,6 +18,12 @@
   function initNavigation() {
     $('.toggle-button').click(function() {
       $('.header').toggleClass('header--active');
+    });
+  };
+
+  function initLanguage() {
+    $('.dropdown-button').click(function() {
+      $('.dropdown').toggleClass('dropdown--active');
     });
   };
 

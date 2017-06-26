@@ -1,43 +1,42 @@
 footer.footer(role='contentinfo')
-  div.footer-main
-    div.container
-      div.footer-main-logo
-        a(href='/')
-          span.hidden #{title}
-          include ../../img/logo.svg
-      div.footer-main-nav
-        ul
-          li
-            a(href='#') Home
-          li
-            a(href='#') Services
-          li
-            a(href='#') Filmography
-          li
-            a(href='#') Team
-          li
-            a(href='#') Blog
-          li
-            a(href='#') About
-          li
-            a(href='#') Contact
-      div.footer-main-lang
-        include ../components/_dropdown.pug
-  div.footer-copy
-    div.container
-      div.footer-copy-legal
-        p © 2017 Sound Art 23 – All Rights Reserved. Privacy Polity & Cookies
-      div.footer-copy-social
-        ul
-          li
-            a(href='#')
-              span.hidden Facebook
-              include ../../img/facebook.svg
-          li
-            a(href='#')
-              span.hidden LinkedIn
-              include ../../img/linkedin.svg
-          li
-            a(href='#')
-              span.hidden Instagram
-              include ../../img/instagram.svg
+  div.container
+    div.footer-logo
+      a(href='/')
+        span.hidden #{title}
+        include ../../img/logo.svg
+    div.footer-nav
+      ul.no-list
+        li
+          a(href='#') Home
+        li
+          a(href='#') Services
+        li
+          a(href='#') Filmography
+        li
+          a(href='#') Team
+        li
+          a(href='#') Blog
+        li
+          a(href='#') About
+        li
+          a(href='#') Contact
+    div.footer-lang
+      include ../components/_dropdown.pug
+footer.complementary
+  div.container
+    div.complementary-copyright
+      p © 2017 Sound Art 23 – All Rights Reserved. Privacy Polity & Cookies
+    div.complementary-social
+      ul.no-list
+        li
+          a(href='#')
+            span.hidden Facebook
+            include ../../img/facebook.svg
+        li
+          a(href='#')
+            span.hidden LinkedIn
+            include ../../img/linkedin.svg
+        li
+          a(href='#')
+            span.hidden Instagram
+            include ../../img/instagram.svg

@@ -1,0 +1,95 @@
+.footer
+  background-color: lighten( $color-1, 94% )
+  .container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    padding-top: $space / 1.333333
+    padding-bottom: $space / 1.333333
+    @include media(max-width $size-l-max)
+      text-align: center
+    @include media($size-m-min)
+      padding-top: $space
+      padding-bottom: $space
+    @include media($size-l-min)
+      padding-top: $space * 1.5
+      padding-bottom: $space * 1.5
+  &-logo
+    line-height: 0
+    @include media(max-width $size-l-max)
+      flex-basis: 100%
+  &-nav
+    @include media(max-width $size-m-max)
+      padding-top: $space * 2
+      padding-bottom: $space * 2
+    @include media(max-width $size-l-max)
+      flex-basis: 100%
+      padding-top: $space * 3
+      padding-bottom: $space * 3
+    @include media($size-l-min)
+      flex-grow: 1
+      text-align: right
+      margin-right: $space
+    ul
+      @include media(min-width $size-m-min max-width $size-l-max)
+        display: flex
+        flex-wrap: wrap
+    li
+      @include media(min-width $size-m-min max-width $size-l-max)
+        flex-basis: 33.333333%
+      @include media(max-width $size-l-max)
+        margin-bottom: $space / 2
+        &:last-of-type
+          margin-bottom: 0
+      @include media($size-l-min)
+        display: inline-block
+        margin-right: - rem-calc(2)
+    a
+      @include media(min-width $size-m-min max-width $size-l-max)
+        display: block
+      @include media($size-l-min)
+        padding: $space / 2 $space
+  &-lang
+    @include media(max-width $size-l-max)
+      flex-basis: 100%
+      margin-top: $space / 1.333333
+      padding-top: $space / 1.333333
+      border-top: rem-calc(1) solid darken( $color-2, 12% )
+    @include media($size-l-min)
+      padding-top: $space / 4
+      padding-bottom: $space / 4
+      padding-left: $space * 1.5
+      border-left: rem-calc(1) solid darken( $color-2, 12% )
+
+.complementary
+  background-color: $color-2
+  .container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    padding-top: $space
+    @include media(max-width $size-l-max)
+      text-align: center
+    @include media($size-m-min)
+      padding-top: $space * 1.5
+    @include media($size-l-min)
+      padding-top: $space / 2
+      padding-bottom: $space / 2
+  &-copyright
+    font-size: em-calc(14)
+    @include media(max-width $size-l-max)
+      flex-basis: 100%
+    p
+      margin: 0
+  &-social
+    @include media(max-width $size-l-max)
+      flex-basis: 100%
+    li
+      display: inline-block
+      line-height: 0
+      margin-left: $space / 4
+      padding-right: $space / 4
+    a
+      display: block
