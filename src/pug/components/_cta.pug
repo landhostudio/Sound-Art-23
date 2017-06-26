@@ -5,11 +5,11 @@ if ( CTAimage && CTAtitle && CTAdesc && CTAbuttonLink && CTAbuttonTitle )
         div.cta-image
           img(src=CTAimage alt='')
       if ( CTAtitle && CTAdesc && CTAbuttonLink && CTAbuttonTitle )
-        div.container
-          div.cta-content
-            if ( heroTitle )
-              h2 #{heroTitle}
-            if ( heroDesc )
-              p #{heroDesc}
+        div.cta-content
+          div.container
+            if ( CTAtitle )
+              h2.h1 #{CTAtitle}
+            if ( CTAdesc )
+              p #{CTAdesc}
             if ( CTAbuttonLink || CTAbuttonTitle )
               a.button-cta(href=CTAbuttonLink) #{CTAbuttonTitle}
