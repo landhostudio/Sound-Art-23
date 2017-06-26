@@ -15,10 +15,18 @@ header.header(role='banner')
     nav.header-nav
       h2.hidden Navigation
       ul.no-list
-        li.header-nav-page.header-nav-page--active
-          a(href='#') Home
-        li.header-nav-page
-          a(href='#') Services
+        if ( page == 'Home' )
+          li.header-nav-page.header-nav-page--active
+            a(href='/') Home
+        else
+          li.header-nav-page
+            a(href='/') Home
+        if ( page == 'Services' || page == 'Service' )
+          li.header-nav-page.header-nav-page--active
+            a(href='/services') Services
+        else
+          li.header-nav-page
+            a(href='/services') Services
         li.header-nav-page
           a(href='#') Filmography
         li.header-nav-page
