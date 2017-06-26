@@ -36,9 +36,9 @@ block content
                     div.swiper-slide-content-image
                       img(src=swiperImage alt='')
                     div.swiper-slide-content-text
-                      h3 #{swiperTitle}
+                      h3.h2 #{swiperTitle}
                       p #{swiperDesc}
-                      a.button-cta(href=swiperButtonLink) #{swiperButtonTitle}
+                      a.button-cta.button-cta--small(href=swiperButtonLink) #{swiperButtonTitle}
 
               +swiperSlide('/img/movie-1.jpg', 'Our working process behind La Haine', 'While most people enjoy standard hirarchy and excitement it provides, others may experience gambling', '#', 'Read more')
               +swiperSlide('/img/movie-2.jpg', 'Our philosophy behind sound in City of God', 'Point view, the till at a shop check out, has become very complex over the past ten years', '#', 'Read more')

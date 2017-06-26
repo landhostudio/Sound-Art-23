@@ -1,0 +1,50 @@
+.filmography
+  background-color: lighten( $color-1, 50% )
+  .hero
+    &-image
+      order: 1
+    &-content
+      order: 2
+      h2
+        color: $color-2
+      p
+        color: darken( $color-2, 25% )
+      .button-cta
+        background-color: $color-2
+        &:focus,
+        &:hover
+          background-color: darken( $color-2, 12% )
+  &-items
+    padding-bottom: $space * 1.5
+    @include media($size-m-min)
+      padding-bottom: $space * 2
+    @include media($size-l-min)
+      padding-bottom: $space * 3
+
+.swiper
+  &-container
+  &-wrapper
+  &-slide
+    border-radius: rem-calc(6)
+    background-color: $color-2
+    &-content
+      &-image
+        line-height: 0
+        img
+          border-top-left-radius: rem-calc(6)
+          border-top-right-radius: rem-calc(6)
+      &-text
+        text-align: center
+        padding: $space
+        max-width: rem-calc(480)
+        margin-left: auto
+        margin-right: auto
+        @include media($size-m-min)
+          padding: $space * 1.5
+        @include media($size-l-min)
+          padding: $space * 2
+        p
+          font-size: em-calc(14)
+          // color: darken( $color-2, 25% )
+          color: lighten( $color-1, 50% )
+          margin-bottom: 0

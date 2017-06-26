@@ -133,9 +133,11 @@
   display: inline-block
   font-weight: bold
   font-size: rem-calc(12)
+  line-height: 1
   background-color: darken( $color-2, 12% )
   padding: $space / 1.333333 $space * 1.5
   text-transform: uppercase
+  letter-spacing: rem-calc(1)
   border-radius: rem-calc(32)
   margin-top: $space
   @include media($size-m-min)
@@ -145,3 +147,12 @@
   &:focus,
   &:hover
     background-color: darken( $color-2, 24% )
+
+  &--small
+    padding: $space / 2 $space
+    font-size: rem-calc(8)
+    margin-top: $space / 2
+    @include media($size-m-min)
+      margin-top: $space
+    @include media($size-l-min)
+      margin-top: $space * 1.5
