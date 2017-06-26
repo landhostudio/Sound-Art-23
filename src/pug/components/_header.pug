@@ -7,27 +7,27 @@ header.header(role='banner')
           include ../../img/logo.svg
     div.header-toggle
       button.toggle-button(type='button')
-        span Open navigation
+        span.hidden Open navigation
         div.state-1
           include ../../img/nav.svg
         div.state-2
           include ../../img/nav-close.svg
     nav.header-nav
       h2.hidden Navigation
-      ul
-        li.header-nav-page--active
+      ul.no-list
+        li.header-nav-page.header-nav-page--active
           a(href='#') Home
-        li
+        li.header-nav-page
           a(href='#') Services
-        li
+        li.header-nav-page
           a(href='#') Filmography
-        li
+        li.header-nav-page
           a(href='#') Team
-        li
+        li.header-nav-page
           a(href='#') Blog
-        li
+        li.header-nav-page
           a(href='#') About
-        li
+        li.header-nav-page
           a(href='#') Contact
     div.header-lang
       include ../components/_dropdown.pug

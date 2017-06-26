@@ -1,0 +1,44 @@
+html
+  font-family: 'Circular Std', sans-serif
+  line-height: 1.5
+  font-weight: 400
+  -webkit-font-smoothing: antialiased
+
+body
+  font-size: 87.5%
+  @include media($size-m-min)
+    font-size: 100%
+  @include media($size-m-min)
+    font-size: 112.5%
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6
+  font-family: 'Circular Std', sans-serif
+  line-height: 1
+  font-weight: 400
+  margin: 0
+
+h1, .h1
+  font-size: em-calc(20)
+  @include media($size-m-min)
+    font-size: em-calc(24)
+  @include media($size-l-min)
+    font-size: em-calc(36)
+
+h2, .h2
+  font-size: em-calc(18)
+  @include media($size-m-min)
+    font-size: em-calc(20)
+  @include media($size-l-min)
+    font-size: em-calc(24)
+
+strong, b
+  font-weight: 700
+
+a
+  color: currentColor
+  text-decoration: none

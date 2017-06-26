@@ -1,0 +1,101 @@
+.hidden
+  position: absolute
+  left: -999em
+
+.container
+  margin-left: auto
+  margin-right: auto
+  padding-left: $space
+  padding-right: $space
+  max-width: $size-m-min
+  @include media($size-m-min)
+    max-width: $size-l-min
+    padding-left: $space * 1.5
+    padding-right: $space * 1.5
+  @include media($size-l-min)
+    max-width: $size-xl-min
+    padding-left: $space * 2
+    padding-right: $space * 2
+
+.no-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+.dropdown
+  position: relative
+  display: inline-block
+  vertical-align: middle
+
+  &-button
+    display: flex
+    align-items: center
+    padding: 0
+    text-align: center
+    text-decoration: none
+    line-height: 0
+    white-space: nowrap
+    border: none
+    background-color: transparent
+    background-image: none
+    vertical-align: middle
+    cursor: pointer
+    user-select: none
+    touch-action: manipulation
+    height: rem-calc(32)
+    &:focus,
+    &:hover
+      outline: none
+    svg
+      vertical-align: middle
+      margin-left: em-calc(4)
+      fill: lighten( $color-1, 50% )
+      .dropdown--active &
+        transform: rotate(180deg)
+  &-menu
+    display: none
+    position: absolute
+    top: 100%
+    width: 100%
+    right: 0
+    z-index: 3
+    float: left
+    text-align: left
+    cursor: pointer
+    .dropdown--active &
+      display: block
+    &-item
+      a
+        display: block
+        opacity: 0.5
+        &:focus,
+        &:hover
+          opacity: 1
+
+.toggle-button
+  display: inline-block
+  padding: 0
+  text-align: center
+  text-decoration: none
+  white-space: nowrap
+  border: none
+  background-color: transparent
+  background-image: none
+  vertical-align: middle
+  cursor: pointer
+  user-select: none
+  touch-action: manipulation
+  line-height: 0
+  height: rem-calc(32)
+  &:focus,
+  &:hover
+    outline: none
+  .state-1
+    display: block
+  .state-2
+    display: none
+
+  svg
+    @include media(min-width $size-m-min max-width $size-l-max)
+      width: rem-calc(18)
+      height: rem-calc(18)

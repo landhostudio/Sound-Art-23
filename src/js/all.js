@@ -7,10 +7,17 @@
   'use strict';
 
   var init = function() {
+    initNavigation();
     if ( $('.swiper-container').length ) {
       initSwiper();
     };
     initLog();
+  };
+
+  function initNavigation() {
+    $('.toggle-button').click(function() {
+      $('.header').toggleClass('header--active');
+    });
   };
 
   function initSwiper() {

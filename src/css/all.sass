@@ -12,24 +12,14 @@
 // BASE ------------------------------------------------------------------------
 
 @import "core/webfonts"
+@import "core/base"
+@import "core/typography"
+@import "core/tools"
 
-body
-  font-family: 'Circular Std', sans-serif
-  background-color: $color-2
-  color: $color-1
-  border: 1em solid $color-1
-  margin: 0
-  padding: 1em
-  min-height: 100vh
+// COMPONENTS ------------------------------------------------------------------
 
-.icons
-  display: flex
-  flex-wrap: wrap
-  
-  svg
-    padding: 1em
+@import "components/header"
 
-img
-  width: 100%
+// VENDORS ---------------------------------------------------------------------
 
 @import "vendors/swiper"
