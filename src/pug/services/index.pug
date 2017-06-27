@@ -4,13 +4,15 @@ block prepend head
 block content
   include ../components/_header
 
-  article
+  article.services
 
-    block prepend ../components/_hero
-      - var heroImage = '../img/artwork-1.png'
-      - var heroTitle = 'Professional sound services for every kind of entertainment'
-      - var heroDesc = 'If you are in the market for a computer, there are a number of factors to consider. Will it be used for your home, your office'
-    include ../components/_hero
+    header.hero
+      div.container.container--grid
+        div.hero-image.container-column-two(data-aos='fade-down', data-aos-duration='2000')
+          img(src='../img/artwork-5.png' alt='')
+        div.hero-content.container-column-two(data-aos='fade-up', data-aos-duration='1500')
+          h2.h1 Professional sound services for every kind of entertainment
+          p If you are in the market for a computer, there are a number of factors to consider. Will it be used for your home, your office
 
     div.services-items
       div.container.container--grid

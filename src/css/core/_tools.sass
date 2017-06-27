@@ -134,19 +134,21 @@
   font-weight: bold
   font-size: rem-calc(12)
   line-height: 1
-  background-color: darken( $color-2, 12% )
+  background-color: $color-3
+  color: $color-2
   padding: $space / 1.333333 $space * 1.5
   text-transform: uppercase
   letter-spacing: rem-calc(1)
   border-radius: rem-calc(32)
   margin-top: $space
+  transition: background-color 500ms
   @include media($size-m-min)
     margin-top: $space * 1.5
   @include media($size-l-min)
     margin-top: $space * 2
   &:focus,
   &:hover
-    background-color: darken( $color-2, 24% )
+    background-color: lighten( $color-3, 5% )
 
   &--small
     padding: $space / 2 $space

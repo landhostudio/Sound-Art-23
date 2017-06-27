@@ -1,8 +1,22 @@
 .services
+
+  .hero
+    background-color: $color-3
+    
+    h2
+      color: $color-2
+    p
+      color: darken( $color-2, 25% )
+
   &-items
     .container
       display: flex
       flex-wrap: wrap
+      padding-top: $space * 2
+      @include media($size-m-min)
+        padding-top: $space * 3
+      @include media($size-l-min)
+        padding-top: $space * 4
   &-item
     margin-bottom: $space
     @include media($size-m-min)
