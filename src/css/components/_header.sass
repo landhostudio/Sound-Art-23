@@ -22,12 +22,14 @@
       font-size: rem-calc(16)
       line-height: 0
     svg
-      width: auto
-      max-height: $space * 1.5
+      width: em-calc(95)
+      height: em-calc(24)
       @include media($size-m-min)
-        max-height: $space * 2
+        width: em-calc(127)
+        height: em-calc(32)
       @include media($size-l-min)
-        max-height: $space * 3
+        width: em-calc(190)
+        height: em-calc(48)
   &-toggle
     display: flex
     @include media(max-width $size-l-max)
