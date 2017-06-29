@@ -57,9 +57,9 @@ gulp.task('stylesheets', function() {
       precision: 6
     }).on('error', sass.logError))
     .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
-    // .pipe(combineMq())
-    // // .pipe(csscomb())
-    // // .pipe(cssnano())
+    .pipe(combineMq())
+    .pipe(csscomb())
+    .pipe(cssnano())
     .pipe(gulp.dest(destination + '/css'))
     .pipe(browserSync.stream());
 });
@@ -67,7 +67,7 @@ gulp.task('stylesheets', function() {
 gulp.task('scripts', function() {
   return gulp.src(source + '/js/all.js')
     .pipe(include())
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest(destination + '/js'))
     .pipe(browserSync.stream());
 });
