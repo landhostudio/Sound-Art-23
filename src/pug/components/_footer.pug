@@ -6,10 +6,18 @@ footer.footer(role='contentinfo')
         include ../../img/logo-2.svg
     div.footer-nav
       ul.no-list
-        li
-          a(href='#') Home
-        li
-          a(href='#') Services
+        if ( page == 'Home' )
+          li
+            a(href='/') Home
+        else
+          li
+            a(href='/') Home
+        if ( page == 'Services' || page == 'Service' )
+          li
+            a(href='/services') Services
+        else
+          li
+            a(href='/services') Services
         li
           a(href='#') Filmography
         li
