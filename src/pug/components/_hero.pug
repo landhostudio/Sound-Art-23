@@ -2,15 +2,17 @@ block hero
   header.hero
     div.container.container--grid
       if ( heroImage )
-        div.hero-image.container-column-two(data-aos='fade-down', data-aos-duration='2000')
-          div.hero-image-holder
-            img(src=heroImage alt='')
-      div.hero-content.container-column-two(data-aos='fade-up', data-aos-duration='1500')
-        if ( heroIcon == 'yes')
-          include ../../img/sound-design.svg
-        if ( heroTitle )
-          h2.h1 #{heroTitle}
-        if ( heroDesc )
-          p #{heroDesc}
-        if ( heroButtonLink || heroButtonTitle )
-          a.button-cta(href=heroButtonLink) #{heroButtonTitle}
+        div.container-column-two
+          div.hero-image(data-aos='fade-down', data-aos-duration='2000')
+            div.hero-image-holder
+              img(src=heroImage alt='')
+      div.container-column-two
+        div.hero-content(data-aos='fade-up', data-aos-duration='1500')
+          if ( heroIcon == 'yes')
+            include ../../img/sound-design.svg
+          if ( heroTitle )
+            h2.h1 #{heroTitle}
+          if ( heroDesc )
+            p #{heroDesc}
+          if ( heroButtonLink || heroButtonTitle )
+            a.button-cta(href=heroButtonLink) #{heroButtonTitle}
