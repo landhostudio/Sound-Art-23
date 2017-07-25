@@ -25,7 +25,7 @@
 
   function initLanguage() {
     $('.dropdown-button').click(function() {
-      $('.dropdown').toggleClass('dropdown--active');
+      $(this).closest('.dropdown').toggleClass('dropdown--active');
     });
   };
 
