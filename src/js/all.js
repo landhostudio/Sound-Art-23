@@ -48,12 +48,14 @@
     });
   };
 
-  function initLog() {
-    console.log('Sound Art 23');
   };
 
   function initAOS() {
     AOS.init();
+  };
+
+  function initLog() {
+    console.log('Sound Art 23');
   };
 
   init();
