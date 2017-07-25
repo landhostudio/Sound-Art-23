@@ -8,43 +8,57 @@
   padding-left: $space
   padding-right: $space
   max-width: $size-m-min
-  &--grid
-    padding-left: $space / 2
-    padding-right: $space / 2
+
   @include media($size-m-min)
     max-width: $size-l-min
     padding-left: $space * 1.5
     padding-right: $space * 1.5
-    &--grid
-      padding-left: ($space * 1.5) / 2
-      padding-right: ($space * 1.5) / 2
+
   @include media($size-l-min)
     max-width: $size-xl-min
     padding-left: $space * 2
     padding-right: $space * 2
-    &--grid
+
+  &--grid
+    display: flex
+    flex-wrap: wrap
+    padding-left: $space / 2
+    padding-right: $space / 2
+    @include media($size-m-min)
+      max-width: $size-l-min
+      padding-left: ($space * 1.5) / 2
+      padding-right: ($space * 1.5) / 2
+      &-reverse
+        flex-direction: row-reverse
+    @include media($size-l-min)
+      max-width: $size-xl-min
       padding-left: $space
       padding-right: $space
 
   &-column
-    &-two, &-three
-      flex-basis: 100%
-      padding-left: $space / 2
-      padding-right: $space / 2
-      @include media($size-m-min)
-        padding-left: ($space * 1.5) / 2
-        padding-right: ($space * 1.5) / 2
-      @include media($size-l-min)
-        padding-left: $space
-        padding-right: $space
-    &-two
+    flex-basis: 100%
+    padding-left: $space / 2
+    padding-right: $space / 2
+    @include media($size-m-min)
+      padding-left: ($space * 1.5) / 2
+      padding-right: ($space * 1.5) / 2
+    @include media($size-l-min)
+      padding-left: $space
+      padding-right: $space
+    &--two
       @include media($size-m-min)
         flex-basis: 50%
-    &-three
+    &--three
       @include media($size-m-min)
         flex-basis: 50%
       @include media($size-l-min)
         flex-basis: 33.333333%
+    &--auto
+      @include media($size-m-min)
+        flex-basis: auto
+
+  &--center
+    justify-content: center
 
 .no-list
   list-style: none
@@ -140,12 +154,7 @@
   text-transform: uppercase
   letter-spacing: rem-calc(1)
   border-radius: rem-calc(32)
-  margin-top: $space
   transition: background-color 500ms
-  @include media($size-m-min)
-    margin-top: $space * 1.5
-  @include media($size-l-min)
-    margin-top: $space * 2
   &:focus,
   &:hover
     background-color: lighten( $color-3, 5% )
@@ -153,8 +162,10 @@
   &--small
     padding: $space / 2 $space
     font-size: rem-calc(8)
-    margin-top: $space / 2
-    @include media($size-m-min)
-      margin-top: $space
-    @include media($size-l-min)
-      margin-top: $space * 1.5
+
+  &--alternative
+    background-color: darken( $color-2, 5% )
+    color: $color-3
+    &:focus,
+    &:hover
+      background-color: $color-2

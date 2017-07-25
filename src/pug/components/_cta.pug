@@ -1,15 +1,28 @@
-if ( CTAimage && CTAtitle && CTAdesc && CTAbuttonLink && CTAbuttonTitle )
-  block cta
-    aside.cta
-      if ( CTAimage )
-        div.cta-image
-          img(src=CTAimage alt='')
-      if ( CTAtitle && CTAdesc && CTAbuttonLink && CTAbuttonTitle )
-        div.cta-content(data-aos='fade-up', data-aos-duration='1500')
-          div.container
-            if ( CTAtitle )
-              h2.h1 #{CTAtitle}
-            if ( CTAdesc )
-              p #{CTAdesc}
-            if ( CTAbuttonLink || CTAbuttonTitle )
-              a.button-cta(href=CTAbuttonLink) #{CTAbuttonTitle}
+block prepend _hero
+
+  - var heroFull = true
+  - var heroAlternative = false
+  - var heroReverse = false
+
+  - var heroFullImage = '/img/artwork-4.png'
+  - var heroADV = ''
+  - var heroCover = ''
+  - var heroIcon = ''
+  - var heroAvatar = ''
+  - var heroImage = ''
+  - var heroTitle = 'Connect your audience with the content that matters most to them'
+  - var heroDesc = 'We offer most reliable services for your valuable project providing the tools and our team to improve your business'
+
+  - var heroCTAlink = ''
+  - var heroCTAtitle = ''
+
+  - var heroWatchID = ''
+  - var heroWatchTitle = ''
+
+  - var heroEmail = 'name@domain.ltd'
+  - var heroEmailTitle = 'Contact us'
+
+  - var heroMapLat = ''
+  - var heroMapLng = ''
+
+include _hero

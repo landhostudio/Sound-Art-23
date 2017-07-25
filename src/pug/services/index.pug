@@ -6,20 +6,39 @@ block content
 
   article.services
 
-    header.hero
-      div.container.container--grid
-        div.container-column-two
-          div.hero-image(data-aos='fade-down', data-aos-duration='2000')
-            img(src='../img/artwork-5.png' alt='')
-        div.container-column-two
-          div.hero-content(data-aos='fade-up', data-aos-duration='1500')
-            h2.h1 Professional sound services for every kind of entertainment
-            p If you are in the market for a computer, there are a number of factors to consider. Will it be used for your home, your office
+    block prepend ../components/_hero
+
+      - var heroFull = false
+      - var heroAlternative = true
+      - var heroReverse = false
+
+      - var heroFullImage = ''
+      - var heroADV = '/img/artwork-5.png'
+      - var heroCover = ''
+      - var heroIcon = ''
+      - var heroAvatar = ''
+      - var heroImage = ''
+      - var heroTitle = 'Professional sound services for every kind of entertainment'
+      - var heroDesc = 'If you are in the market for a computer, there are a number of factors to consider. Will it be used for your home, your office'
+
+      - var heroCTAlink = ''
+      - var heroCTAtitle = ''
+
+      - var heroWatchID = ''
+      - var heroWatchTitle = ''
+
+      - var heroEmail = ''
+      - var heroEmailTitle = ''
+
+      - var heroMapLat = ''
+      - var heroMapLng = ''
+
+    include ../components/_hero
 
     div.services-items
       div.container.container--grid
 
-        article.services-item.container-column-three
+        article.services-item.container-column.container-column--three
           div.services-item-content(data-aos='fade', data-aos-duration='1000')
             div.services-item-content-image(data-aos='fade')
               include ../../img/sound-design.svg
@@ -28,7 +47,7 @@ block content
               p Everybody that has ever been to a meeting, can recall the all familiar passing
               a.button-cta.button-cta--small(href='/service') Read more
         
-        article.services-item.container-column-three
+        article.services-item.container-column.container-column--three
           div.services-item-content(data-aos='fade', data-aos-duration='1000')
             div.services-item-content-image(data-aos='fade')
               include ../../img/mixing-1.svg
@@ -37,7 +56,7 @@ block content
               p Everybody that has ever been to a meeting, can recall the all familiar passing
               a.button-cta.button-cta--small(href='/service') Read more
         
-        article.services-item.container-column-three
+        article.services-item.container-column.container-column--three
           div.services-item-content(data-aos='fade', data-aos-duration='1000')
             div.services-item-content-image(data-aos='fade')
               include ../../img/video-editing.svg
@@ -46,7 +65,7 @@ block content
               p Everybody that has ever been to a meeting, can recall the all familiar passing
               a.button-cta.button-cta--small(href='/service') Read more
 
-        article.services-item.container-column-three
+        article.services-item.container-column.container-column--three
           div.services-item-content(data-aos='fade', data-aos-duration='1000')
             div.services-item-content-image(data-aos='fade')
               include ../../img/post-production.svg
@@ -55,7 +74,7 @@ block content
               p Everybody that has ever been to a meeting, can recall the all familiar passing
               a.button-cta.button-cta--small(href='/service') Read more
         
-        article.services-item.container-column-three
+        article.services-item.container-column.container-column--three
           div.services-item-content(data-aos='fade', data-aos-duration='1000')
             div.services-item-content-image(data-aos='fade')
               include ../../img/vfx.svg
@@ -64,7 +83,7 @@ block content
               p Everybody that has ever been to a meeting, can recall the all familiar passing
               a.button-cta.button-cta--small(href='/service') Read more
 
-        article.services-item.container-column-three
+        article.services-item.container-column.container-column--three
           div.services-item-content(data-aos='fade', data-aos-duration='1000')
             div.services-item-content-image(data-aos='fade')
               include ../../img/screening.svg
@@ -73,7 +92,7 @@ block content
               p Everybody that has ever been to a meeting, can recall the all familiar passing
               a.button-cta.button-cta--small(href='/service') Read more
 
-        article.services-item.container-column-three
+        article.services-item.container-column.container-column--three
           div.services-item-content(data-aos='fade', data-aos-duration='1000')
             div.services-item-content-image(data-aos='fade')
               include ../../img/dubbing.svg
@@ -82,11 +101,5 @@ block content
               p Everybody that has ever been to a meeting, can recall the all familiar passing
               a.button-cta.button-cta--small(href='/service') Read more
 
-  block prepend ../components/_cta
-    - var CTAimage = '/img/artwork-4.png'
-    - var CTAtitle = 'Connect your audience with the content that matters most to them'
-    - var CTAdesc = 'We offer most reliable services for your valuable project providing the tools and our team to improve your business'
-    - var CTAbuttonLink = '#'
-    - var CTAbuttonTitle = 'Contact us'
   include ../components/_cta
   include ../components/_footer

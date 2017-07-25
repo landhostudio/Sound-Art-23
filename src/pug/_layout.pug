@@ -16,4 +16,7 @@ html.no-js(lang='en')
       meta(name="theme-color", content="#375F9D")
   body
     block content
+
+    if ( page == 'Test' || page == 'Contact' )
+      script(src=googleMapsScript)
     script(src='/js/all.js')

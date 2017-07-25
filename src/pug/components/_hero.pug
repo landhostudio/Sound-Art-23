@@ -1,18 +1,89 @@
-block hero
-  header.hero
-    div.container.container--grid
+//- con hero alternative si utlizzato colori alternativi
+//- con grid reverse si cambia l’ordine delle colonne
+//- con column auto si annulla larghezza per quella automatica (in base al contenuto interno)
+
+header.hero(class=heroAlternative ? 'hero--alternative' : '')
+
+  if ( heroFullImage )
+    div.hero-full
+      div.hero-full-holder
+        img(src=heroFullImage alt='')
+
+  div.container.container--grid(class=heroReverse ? 'container--grid-reverse' : '', class=heroFull ? 'container--center' : '')
+
+    if ( heroADV || heroCover )
+
+      div.container-column(class=heroCover ? 'container-column--auto' : 'container-column--two')
+
+        //- Qui ci vanno ----------------------------------------------------- :
+
+        //- 1. immagine square/ADV
+        if ( heroADV )
+          div.hero-adv(data-aos='fade-down', data-aos-duration='2000')
+            div.hero-adv-holder
+              img(src=heroADV alt='')
+
+        //- 2. immagine copertina del film
+        if ( heroCover )
+          div.hero-cover(data-aos='fade', data-aos-duration='1500')
+            div.hero-cover-holder
+              img(src=heroCover alt='')
+
+    div.container-column.container-column--two
+
+      //- Qui ci vanno ------------------------------------------------------- :
+
+      //- 1. icona animata
+      if ( heroIcon )
+        div.hero-icon
+          div.hero-icon-holder
+            //- non ci deve andare img ma direttamente svg inniettato
+            img(src=heroIcon alt='')
+
+      //- 2. avatar persona
+      if ( heroAvatar )
+        div.hero-avatar(data-aos='fade', data-aos-duration='1500')
+          div.hero-avatar-holder
+            img(src=heroAvatar alt='')
+
+      //- 3. immagine 16:9
       if ( heroImage )
-        div.container-column-two
-          div.hero-image(data-aos='fade-down', data-aos-duration='2000')
-            div.hero-image-holder
-              img(src=heroImage alt='')
-      div.container-column-two
-        div.hero-content(data-aos='fade-up', data-aos-duration='1500')
-          if ( heroIcon == 'yes')
-            include ../../img/sound-design.svg
+        div.hero-image(data-aos='fade', data-aos-duration='1500')
+          div.hero-image-holder
+            img(src=heroImage alt='')
+
+      //- 4. titolo
+
+      if ( heroTitle || heroDesc || heroCTAlink || heroCTAtitle || heroWatchID || heroWatchTitle || heroEmail || heroEmailTitle )
+
+        div.hero-content(class=heroADV ? 'hero-content--center' : '', class=heroCover ? 'hero-content--center' : '', data-aos='fade-up', data-aos-duration='1500')
+
           if ( heroTitle )
             h2.h1 #{heroTitle}
+
+          //- 5. paragrafo/desc
           if ( heroDesc )
             p #{heroDesc}
-          if ( heroButtonLink || heroButtonTitle )
-            a.button-cta(href=heroButtonLink) #{heroButtonTitle}
+          
+          //- 6. data
+          if ( heroDate )
+            p
+              time(datetime=heroDate) #{heroDate}
+
+          //- 7. bottone grande/CTA "read more"
+          if ( heroCTAlink && heroCTAtitle )
+            a.button-cta(href=heroCTAlink class=heroAlternative ? 'button-cta--alternative' : '') #{heroCTAtitle}
+
+          //- 8. bottone piccolo/CTA "watch trailer"
+          if ( heroWatchID && heroWatchTitle )
+            a.button-cta.button-cta--small(href=heroWatchID class=heroAlternative ? 'button-cta--alternative' : '') #{heroWatchTitle}
+
+          //- 9. bottone email
+          if ( heroEmail && heroEmailTitle )
+            a.button-cta(href='mailto:' + heroEmail class=heroAlternative ? 'button-cta--alternative' : '') #{heroEmailTitle}
+
+      //- 8. mappa iframe
+      if ( heroMapLat && heroMapLng )
+        div.hero-map(data-aos='fade', data-aos-duration='2000', data-aos-delay='500')
+          div.hero-map-canvas
+            div.hero-map-location(data-lat=heroMapLat, data-lng=heroMapLng)

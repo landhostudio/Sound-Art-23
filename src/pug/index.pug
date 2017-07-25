@@ -7,21 +7,53 @@ block content
   article
 
     block prepend components/_hero
-      - var heroImage = '/img/mic.png'
+    
+      - var heroAlternative = false
+      - var heroReverse = true
+
+      - var heroADV = '/img/mic.png'
+      - var heroCover = ''
+      - var heroIcon = ''
+      - var heroAvatar = ''
+      - var heroImage = ''
       - var heroTitle = 'More than 40 years in the sound production business'
       - var heroDesc = 'Classifieds are usually the first place you think of when you are getting ready to make a purchase. Whether you want to purchase a vehicle'
-      - var heroButtonLink = '/services'
-      - var heroButtonTitle = 'Our services'
+
+      - var heroCTAlink = '/services'
+      - var heroCTAtitle = 'Our services'
+
+      - var heroWatchID = ''
+      - var heroWatchTitle = ''
+
+      - var heroMapLat = ''
+      - var heroMapLng = ''
+
     include components/_hero
 
     section.filmography
-      
+
       block prepend components/_hero
-        - var heroImage = '/img/artwork-2.png'
+      
+        - var heroAlternative = true
+        - var heroReverse = false
+
+        - var heroADV = '/img/artwork-2.png'
+        - var heroCover = ''
+        - var heroIcon = ''
+        - var heroAvatar = ''
+        - var heroImage = ''
         - var heroTitle = 'We provide services for international films worldwide'
         - var heroDesc = 'It can also have much more detail, such as name to contact, address to contact or visit, a description of the product'
-        - var heroButtonLink = '#'
-        - var heroButtonTitle = 'Our filmography'
+
+        - var heroCTAlink = '#'
+        - var heroCTAtitle = 'Our filmography'
+
+        - var heroWatchID = ''
+        - var heroWatchTitle = ''
+
+        - var heroMapLat = ''
+        - var heroMapLng = ''
+
       include components/_hero
       
       div.filmography-items
@@ -47,19 +79,30 @@ block content
             div.swiper-pagination
 
     div.about
+
       block prepend components/_hero
-        - var heroImage = '/img/headphones.png'
+      
+        - var heroAlternative = false
+        - var heroReverse = true
+
+        - var heroADV = '/img/headphones.png'
+        - var heroCover = ''
+        - var heroIcon = ''
+        - var heroAvatar = ''
+        - var heroImage = ''
         - var heroTitle = 'Our team has more than 40 years of experience in industry evolution'
         - var heroDesc = 'Classifieds are usually the first place you think of when you are getting ready to make a purchase. Whether you want to purchase a vehicle'
-        - var heroButtonLink = '#'
-        - var heroButtonTitle = 'Our team'
+
+        - var heroCTAlink = '#'
+        - var heroCTAtitle = 'Our team'
+
+        - var heroWatchID = ''
+        - var heroWatchTitle = ''
+
+        - var heroMapLat = ''
+        - var heroMapLng = ''
+
       include components/_hero
 
-  block prepend components/_cta
-    - var CTAimage = '/img/artwork-4.png'
-    - var CTAtitle = 'Connect your audience with the content that matters most to them'
-    - var CTAdesc = 'We offer most reliable services for your valuable project providing the tools and our team to improve your business'
-    - var CTAbuttonLink = '#'
-    - var CTAbuttonTitle = 'Contact us'
   include components/_cta
   include components/_footer
