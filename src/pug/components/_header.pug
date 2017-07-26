@@ -27,8 +27,12 @@ header.header(role='banner')
         else
           li.header-nav-page
             a(href='/services') Services
-        li.header-nav-page
-          a(href='#') Filmography
+        if ( page == 'Filmography' )
+          li.header-nav-page.header-nav-page--active
+            a(href='/filmography') Filmography
+        else
+          li.header-nav-page
+            a(href='/filmography') Filmography
         li.header-nav-page
           a(href='#') Team
         li.header-nav-page
