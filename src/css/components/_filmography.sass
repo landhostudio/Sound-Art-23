@@ -47,3 +47,40 @@
             box-shadow: 0 em-calc(3) em-calc(24) rgba($color-1, 0.5)
 
   &-category
+    &-items
+    &-item
+      margin-bottom: $space * 1.5
+      @include media($size-m-min)
+        margin-bottom: $space * 2
+      @include media($size-l-min)
+        margin-bottom: $space * 3
+      &-content
+        text-align: center
+        &-image
+          line-height: 0
+          img
+            border-radius: em-calc(2)
+            box-shadow: 0 em-calc(3) em-calc(8) rgba($color-1, 0.25)
+            max-width: em-calc(110)
+            transition: all 500ms
+            @include media($size-m-min)
+              max-width: em-calc(120)
+            @include media($size-l-min)
+              max-width: em-calc(130)
+        &-text
+          padding: $space
+          @include media($size-m-min)
+            padding: $space * 1.5
+          @include media($size-l-min)
+            padding: $space * 2
+          p
+            font-size: em-calc(14)
+            color: lighten( $color-1, 50% )
+            margin-bottom: 0
+
+          .button-cta
+            margin-top: $space / 1.333333
+            @include media($size-m-min)
+              margin-top: $space * 1.125
+            @include media($size-l-min)
+              margin-top: $space * 1.375

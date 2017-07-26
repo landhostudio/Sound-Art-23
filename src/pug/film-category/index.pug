@@ -1,0 +1,67 @@
+extends ../_layout
+block prepend head
+  - var page = 'Film category'
+block content
+  include ../components/_header
+
+  article.filmography-category
+
+    block prepend ../components/_hero
+
+      - var heroFull = true
+      - var heroAlternative = false
+      - var heroReverse = false
+
+      - var heroFullImage = ''
+      - var heroADV = ''
+      - var heroCover = ''
+      - var heroIcon = ''
+      - var heroAvatar = ''
+      - var heroImage = ''
+      - var heroTitle = 'Featured'
+      - var heroDesc = 'Along with conventional advertising and below the line activities.'
+      - var heroDate = ''
+
+      - var heroCTAlink = ''
+      - var heroCTAtitle = ''
+
+      - var heroWatchID = ''
+      - var heroWatchTitle = ''
+
+      - var heroEmail = ''
+      - var heroEmailTitle = ''
+
+      - var heroMapLat = ''
+      - var heroMapLng = ''
+
+    include ../components/_hero
+
+    div.filmography-category-items
+      div.container.container--grid
+
+        mixin film(filmTitle,filmDesc,filmCover,filmLink)
+        
+          article.filmography-category-item.container-column.container-column--two-m.container-column--three-l
+            div.filmography-category-item-content(data-aos='fade', data-aos-duration='1000')
+              div.filmography-category-item-content-image
+                img(src=filmCover, alt='')
+              div.filmography-category-item-content-text
+                h3 #{filmTitle}
+                p #{filmDesc}
+                a.button-cta.button-cta--small(href=filmLink) Read more
+
+        +film('City of God', 'When I was just starting 6th grade I got my first job on Paperboy magazine.', '/img/film-cover-1.png', '/film')
+        +film('Bloodline', 'One way to announce or promote a certain new product or special events.', '/img/film-cover-2.png', '/film')
+        +film('Scarface', 'There are numerous success stories you will hear about businesses.', '/img/film-cover-3.png', '/film')
+        +film('Between', 'Postcards have been consistently one of the more popular collectibles.', '/img/film-cover-4.png', '/film')
+        +film('Dr. House', 'There are many kinds of narratives and organizing principles.', '/img/film-cover-5.png', '/film')
+        +film('La Reina del Sun', 'Benefit from misspelling in order to find keywords which your competitors.', '/img/film-cover-6.png', '/film')
+        +film('BBC Earth Africa', 'Recently I came across an exciting video on the internet', '/img/film-cover-7.png', '/film')
+        +film('Shooter', 'When you browse through videos at YouTube, which do you usually click first:', '/img/film-cover-8.png', '/film')
+        +film('Going Clear Scientology', 'Attending a trade show can be a very effective method of promoting', '/img/film-cover-9.png', '/film')
+        +film('Stranger Things', 'Spielberg’s blockbuster, “Minority Report”, is set in the year.', '/img/film-cover-10.png', '/film')
+        +film('Abstract', 'Adwords Keyword research for beginners when you embark.', '/img/film-cover-11.png', '/film')
+        +film('Dexter', 'There is such a lot of talk going around about branding.', '/img/film-cover-12.png', '/film')
+
+  include ../components/_cta
+  include ../components/_footer
