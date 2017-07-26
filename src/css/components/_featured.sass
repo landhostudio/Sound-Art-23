@@ -1,0 +1,41 @@
+.featured
+  background-color: $color-3
+  padding-bottom: $space * 1.5
+  @include media($size-m-min)
+    padding-bottom: $space * 2
+  @include media($size-l-min)
+    padding-bottom: $space * 3
+
+.swiper
+  &-container
+  &-wrapper
+  &-slide
+    border-radius: rem-calc(6)
+    background-color: $color-2
+    &-content
+      &-image
+        line-height: 0
+        img
+          border-top-left-radius: rem-calc(6)
+          border-top-right-radius: rem-calc(6)
+      &-text
+        text-align: center
+        padding: $space
+        max-width: rem-calc(480)
+        margin-left: auto
+        margin-right: auto
+        @include media($size-m-min)
+          padding: $space * 1.5
+        @include media($size-l-min)
+          padding: $space * 2
+        p
+          font-size: em-calc(14)
+          color: transparentize( $color-1, 0.5 )
+          margin-bottom: 0
+
+        .button-cta--small
+          margin-top: $space / 1.333333
+          @include media($size-m-min)
+            margin-top: $space * 1.125
+          @include media($size-l-min)
+            margin-top: $space * 1.375
