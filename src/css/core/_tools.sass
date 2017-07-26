@@ -46,16 +46,30 @@
       padding-left: $space
       padding-right: $space
     &--two
-      @include media($size-m-min)
+      &-m
+        @include media(min-width $size-m-min max-width $size-l-max)
+          flex-basis: 50%
+      &-l
+        @include media($size-l-min)
+          flex-basis: 50%
+      &-all
         flex-basis: 50%
+
     &--three
-      @include media($size-m-min)
-        flex-basis: 50%
-      @include media($size-l-min)
+      &-m
+        @include media(min-width $size-m-min max-width $size-l-max)
+          flex-basis: 33.333333%
+      &-l
+        @include media($size-l-min)
+          flex-basis: 33.333333%
+      &-all
         flex-basis: 33.333333%
+
     &--auto
-      @include media($size-m-min)
-        flex-basis: auto
+      flex: 0 0 auto
+      padding-left: 0 !important
+      &:last-of-type
+        padding-right: 0 !important
 
   &--center
     justify-content: center
