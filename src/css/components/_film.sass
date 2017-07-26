@@ -1,0 +1,28 @@
+.film
+  &-services
+    padding-top: $space * 2
+    @include media($size-m-min)
+      padding-top: $space * 3
+    @include media($size-l-min)
+      padding-top: $space * 4
+    &-item
+      &:nth-child(odd)
+        &:not(:first-child)
+          margin-top: $space * 2
+          @include media($size-m-min)
+            margin-top: $space * 3
+          @include media($size-l-min)
+            margin-top: $space * 4
+      &-content
+        p
+          font-size: em-calc(14)
+          color: lighten( $color-1, 50% )
+          margin-bottom: 0
+          @include media($size-m-min)
+            max-width: em-calc(380)
+        .button-cta
+          margin-top: $space / 1.333333
+          @include media($size-m-min)
+            margin-top: $space * 1.125
+          @include media($size-l-min)
+            margin-top: $space * 1.375

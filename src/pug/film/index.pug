@@ -1,0 +1,57 @@
+extends ../_layout
+block prepend head
+  - var page = 'Film'
+block content
+  include ../components/_header
+
+  article.film
+
+    block prepend ../components/_hero
+
+      - var heroFull = false
+      - var heroAlternative = false
+      - var heroReverse = false
+
+      - var heroFullImage = ''
+      - var heroADV = ''
+      - var heroCover = '/img/movie-cover.jpg'
+      - var heroIcon = ''
+      - var heroAvatar = ''
+      - var heroImage = ''
+      - var heroTitle = 'City of God'
+      - var heroDesc = 'To a general advertiser outdoor advertising is worthy of consideration'
+
+      - var heroCTAlink = ''
+      - var heroCTAtitle = ''
+
+      - var heroWatchID = 'https://www.youtube.com/watch?v=1234567890'
+      - var heroWatchTitle = 'Watch trailer'
+
+      - var heroEmail = ''
+      - var heroEmailTitle = ''
+
+      - var heroMapLat = ''
+      - var heroMapLng = ''
+
+    include ../components/_hero
+
+    div.body
+      div.container
+        p There is no better advertisement campaign that is low cost and also successful at the same time. Great business ideas when utilized effectively can save lots of money. This is not only easy for those who work full-time as an advertiser, but also for those who work from home. Advertising from home is also a low cost option, which involves making and distributing fliers. Usually potential customers will visit home for business dealing. Print good amount of fliers and give it to anyone who is visiting home like family, friends, mailman, etc. Business can also be distributed. Few selected people can be given sample of the product. For those who work outside home to distribute fliers.
+
+    div.film-services
+      div.container.container--grid
+        
+        mixin service(serviceTitle,serviceDesc)
+          article.film-services-item.container-column.container-column--two-m.container-column--two-l
+            div.film-services-item-content
+              h3 #{serviceTitle}
+              p #{serviceDesc}
+              a.button-cta.button-cta--small(href='/service') Read more
+
+        +service('Sound Design', 'To a general advertiser outdoor advertising is worthy of consideration')
+        +service('Mixing', 'Everybody that has ever been to a meeting, can recall the all familiar passing')
+        +service('Video Editing', 'Classifieds are usually the first place you think of when you are getting ready')
+
+  include ../components/_cta
+  include ../components/_footer
