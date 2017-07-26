@@ -35,25 +35,25 @@ block content
 
     include ../components/_hero
 
-    section.filmography-category
+    section.filmography-section
 
-      header.filmography-category-header
+      header.filmography-section-header
         div.container.container--grid
           div.container-column.container-column--two-all
-            div.filmography-category-header-content
+            div.filmography-section-header-content
               h3.h2 Featured
               p Along with conventional advertising and below the line activities.
           div.container-column.container-column--two-all
-            div.filmography-category-header-all
+            div.filmography-section-header-all
               a.button-cta.button-cta--small(href='/film-category') Show all
 
-      div.filmography-category-items
+      div.filmography-section-items
         div.container
           div.container--scroll
             
             mixin film(filmTitle,filmCover,filmLink)
-              article.filmography-category-item.container-column.container-column--auto
-                a.filmography-category-item-link(href=filmLink)
+              article.filmography-section-item.container-column.container-column--auto-all
+                a.filmography-section-item-link(href=filmLink)
                   h4.hidden #{filmTitle}
                   img(src=filmCover, alt='')
             
@@ -70,25 +70,25 @@ block content
             +film('Film 11', '/img/film-cover-11.png', '/film')
             +film('Film 12', '/img/film-cover-12.png', '/film')
 
-    section.filmography-category
+    section.filmography-section
 
-      header.filmography-category-header
+      header.filmography-section-header
         div.container.container--grid
           div.container-column.container-column--two-all
-            div.filmography-category-header-content
+            div.filmography-section-header-content
               h3.h2 TV
               p Outdoor advertising is a low budget and effective way of advertising.
           div.container-column.container-column--two-all
-            div.filmography-category-header-all
+            div.filmography-section-header-all
               a.button-cta.button-cta--small(href='/film-category') Show all
 
-      div.filmography-category-items
+      div.filmography-section-items
         div.container
           div.container--scroll
 
             mixin film(filmTitle,filmCover,filmLink)
-              article.filmography-category-item.container-column.container-column--auto
-                a.filmography-category-item-link(href=filmLink)
+              article.filmography-section-item.container-column.container-column--auto-all
+                a.filmography-section-item-link(href=filmLink)
                   h4.hidden #{filmTitle}
                   img(src=filmCover, alt='')
 

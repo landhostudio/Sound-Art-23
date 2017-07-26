@@ -1,6 +1,6 @@
 .filmography
 
-  &-category
+  &-section
     padding-top: $space * 2
     @include media($size-m-min)
       padding-top: $space * 3
@@ -24,7 +24,7 @@
           padding-top: $space * 3
           padding-bottom: $space * 3
     &-item
-      &.container-column--auto
+      &.container-column--auto-all
         padding-left: 0
         &:last-of-type
           padding-right: 0
@@ -45,3 +45,5 @@
           img
             filter: brightness(110%)
             box-shadow: 0 em-calc(3) em-calc(24) rgba($color-1, 0.5)
+
+  &-category
