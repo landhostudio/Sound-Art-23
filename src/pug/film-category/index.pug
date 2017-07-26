@@ -44,7 +44,8 @@ block content
           article.filmography-category-item.container-column.container-column--two-m.container-column--three-l
             div.filmography-category-item-content(data-aos='fade', data-aos-duration='1000')
               div.filmography-category-item-content-image
-                img(src=filmCover, alt='')
+                a.filmography-category-item-content-link(href=filmLink)
+                  img(src=filmCover, alt='')
               div.filmography-category-item-content-text
                 h3 #{filmTitle}
                 p #{filmDesc}
