@@ -33,6 +33,22 @@
       padding-left: $space
       padding-right: $space
 
+  &--scroll
+    display: flex
+    flex-wrap: nowrap
+    overflow-x: auto
+    overflow-y: hidden
+    padding-left: 0 !important
+    padding-right: 0 !important
+    -webkit-overflow-scrolling: touch
+    -ms-overflow-style: -ms-autohiding-scrollbar
+    &::-webkit-scrollbar
+      height: em-calc(3)
+    &::-webkit-scrollbar-track
+      background: darken($color-2, 12%)
+    &::-webkit-scrollbar-thumb
+      background: $color-3
+
   &-column
     flex-basis: 100%
     padding-left: $space / 2

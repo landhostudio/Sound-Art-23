@@ -1,41 +1,43 @@
 .filmography
-  background-color: $color-3
-  .hero
-    &-image
-      order: 1
-    &-content
-      order: 2
-  &-items
-    padding-bottom: $space * 1.5
-    @include media($size-m-min)
-      padding-bottom: $space * 2
-    @include media($size-l-min)
-      padding-bottom: $space * 3
 
-.swiper
-  &-container
-  &-wrapper
-  &-slide
-    border-radius: rem-calc(6)
-    background-color: $color-2
-    &-content
-      &-image
+  &-category
+    padding-top: $space * 2
+    @include media($size-m-min)
+      padding-top: $space * 3
+    @include media($size-l-min)
+      padding-top: $space * 4
+    &-header
+      &-content
+        p
+          color: transparentize( $color-1, 0.5 )
+          margin-bottom: 0
+      &-all
+        text-align: right
+    &-items
+      .container--scroll
+        padding-top: $space
+        padding-bottom: $space
+        @include media($size-m-min)
+          padding-top: $space * 2
+          padding-bottom: $space * 2
+        @include media($size-l-min)
+          padding-top: $space * 3
+          padding-bottom: $space * 3
+    &-item
+      &-link
+        display: block
         line-height: 0
         img
-          border-top-left-radius: rem-calc(6)
-          border-top-right-radius: rem-calc(6)
-      &-text
-        text-align: center
-        padding: $space
-        max-width: rem-calc(480)
-        margin-left: auto
-        margin-right: auto
-        @include media($size-m-min)
-          padding: $space * 1.5
-        @include media($size-l-min)
-          padding: $space * 2
-        p
-          font-size: em-calc(14)
-          // color: darken( $color-2, 25% )
-          color: lighten( $color-1, 50% )
-          margin-bottom: 0
+          border-radius: em-calc(2)
+          box-shadow: 0 em-calc(3) em-calc(8) rgba($color-1, 0.25)
+          max-width: em-calc(110)
+          transition: all 500ms
+          @include media($size-m-min)
+            max-width: em-calc(120)
+          @include media($size-l-min)
+            max-width: em-calc(140)
+        &:focus,
+        &:hover
+          img
+            filter: brightness(110%)
+            box-shadow: 0 em-calc(3) em-calc(24) rgba($color-1, 0.5)
