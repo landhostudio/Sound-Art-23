@@ -80,7 +80,14 @@
         flex-basis: 33.333333%
 
     &--auto
-      flex: 0 0 auto
+      &-m
+        @include media(min-width $size-m-min max-width $size-l-max)
+          flex: 0 0 auto
+      &-l
+        @include media($size-l-min)
+          flex: 0 0 auto
+      &-all
+        flex: 0 0 auto
 
   &--center
     justify-content: center
