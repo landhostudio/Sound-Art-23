@@ -11,6 +11,11 @@ Official site for Sound Art 23
 5. Build project assets running `gulp`
 6. Open watch server with run `gulp watch`
 
+## Progress
+
+- [ ] finished
+- [ ] launch
+
 ## License
 
 This site is copyrighted. Non autorizated modification (any of modification of the source code inside this theme folder) of this theme is strongly prohibited.
