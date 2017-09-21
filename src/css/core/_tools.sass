@@ -101,11 +101,10 @@
   position: relative
   display: inline-block
   vertical-align: middle
-
   &-button
     display: flex
     align-items: center
-    padding: 0
+    padding: 0 $space / 1.5
     text-align: center
     text-decoration: none
     line-height: 0
@@ -127,24 +126,36 @@
       fill: lighten( $color-1, 50% )
       .dropdown--active &
         transform: rotate(180deg)
+    .dropdown--active &
+      box-shadow: 0px 2px 6px rgba($color-1, .25)
+      background-color: $color-2
+      border-top-left-radius: rem-calc(4)
+      border-top-right-radius: rem-calc(4)
   &-menu
     display: none
     position: absolute
     top: 100%
-    width: 100%
     right: 0
+    width: 100%
     z-index: 3
     float: left
     text-align: left
     cursor: pointer
+    box-shadow: 0px 4px 6px rgba($color-1, .25)
+    background-color: $color-2
+    border-bottom-left-radius: rem-calc(4)
+    border-bottom-right-radius: rem-calc(4)
+    padding-top: rem-calc(3)
     .dropdown--active &
       display: block
     &-item
       a
         display: block
         opacity: 0.5
+        padding: rem-calc(3) $space / 1.5
         &:focus,
         &:hover
+          cursor: pointer
           opacity: 1
 
 .toggle-button
@@ -162,6 +173,7 @@
   touch-action: manipulation
   line-height: 0
   height: rem-calc(32)
+  width: rem-calc(32)
   &:focus,
   &:hover
     outline: none
